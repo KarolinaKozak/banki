@@ -284,6 +284,11 @@ ul {
   border-radius: 8px;
   border: 2px solid #c3b0c0;
   padding: 6px 26px;
+  transition: all 0.2s ease;
+}
+.slide-button:hover {
+  background: #fff;
+  border-color: #fff;
 }
 .slider .swiper-button-next:after,
 .slider .swiper-button-prev:after {

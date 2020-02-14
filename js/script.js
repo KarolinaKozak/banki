@@ -4,7 +4,10 @@ $(document).ready(function() {
     slidesPerView: 3,
     freeMode: true,
     watchSlidesVisibility: true,
-    watchSlidesProgress: true,
+    watchSlidesProgress: true
+  });
+  var galleryTop = new Swiper(".gallery-top", {
+    spaceBetween: 10,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
@@ -16,9 +19,6 @@ $(document).ready(function() {
         prevEl: ".swiper-button-prev"
       }
     }
-  });
-  var galleryTop = new Swiper(".gallery-top", {
-    spaceBetween: 10
   });
 
   var swiper = new Swiper(".article-slider", {
