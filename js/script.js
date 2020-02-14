@@ -26,19 +26,14 @@ $(document).ready(function() {
     }
   });
 
-  $(".slider-f").slick({
-    dots: true,
-    arrows: true,
-    autoplay: true,
-    responsive: [
-      {
-        breakpoint: 620,
-        settings: {
-          dots: false,
-          arrows: false
-        }
-      }
-    ]
+  new Swiper(".gallery-slider", {
+    slidesPerView: 3,
+    slidesPerColumn: 2,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    }
   });
 
   $(".arrtop").on("click", function(e) {
