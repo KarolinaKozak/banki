@@ -2,22 +2,17 @@ $(document).ready(function() {
   var galleryThumbs = new Swiper(".gallery-thumbs", {
     spaceBetween: 10,
     slidesPerView: 3,
-    freeMode: true,
     watchSlidesVisibility: true,
-    watchSlidesProgress: true
-  });
-  var galleryTop = new Swiper(".gallery-top", {
-    spaceBetween: 10,
+    watchSlidesProgress: true,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev"
-    },
+    }
+  });
+  var galleryTop = new Swiper(".gallery-top", {
+    spaceBetween: 10,
     thumbs: {
-      swiper: galleryThumbs,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-      }
+      swiper: galleryThumbs
     }
   });
 
