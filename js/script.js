@@ -2,6 +2,7 @@ $(document).ready(function() {
   var galleryThumbs = new Swiper(".gallery-thumbs", {
     spaceBetween: 10,
     slidesPerView: 3,
+    loop: true,
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
     navigation: {
@@ -10,7 +11,7 @@ $(document).ready(function() {
     }
   });
   var galleryTop = new Swiper(".gallery-top", {
-    spaceBetween: 10,
+    loop: true,
     thumbs: {
       swiper: galleryThumbs
     }

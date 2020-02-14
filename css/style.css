@@ -283,19 +283,27 @@ ul {
   color: #fff;
   border-radius: 8px;
   border: 2px solid #c3b0c0;
-  padding: 6px 26px;
+  padding: 6px 12px;
+  text-transform: uppercase;
   transition: all 0.2s ease;
 }
 .slide-button:hover {
   background: #fff;
   border-color: #fff;
 }
-.slider .swiper-button-next:after,
-.slider .swiper-button-prev:after {
+.slide-button i {
+  padding-left: 8px;
+}
+.slider .swiper-button-next::after,
+.slider .swiper-button-prev::after {
   content: "";
   background: url(../images/next.png) center center no-repeat;
   height: 99px;
   width: 29px;
+}
+.slider .swiper-button-next:hover::after,
+.slider .swiper-button-prev:hover::after {
+  background: url(../images/nexthover.jpg) center center no-repeat;
 }
 .slider .swiper-button-prev:after {
   transform: scaleX(-1);
@@ -306,10 +314,10 @@ ul {
   bottom: 10%;
 }
 .swiper-button-prev {
-  left: 8%;
+  left: 12%;
 }
 .swiper-button-next {
-  right: 8%;
+  right: 12%;
 }
 .gallery-top {
   height: 80%;
@@ -359,6 +367,44 @@ ul {
 .article-slider .swiper-slide {
   /* height: 100%; */
   height: 100px;
+}
+.about {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+.about .h2 {
+  color: #000;
+}
+.about .h3 {
+  margin-bottom: 2rem;
+}
+.h5 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.025em;
+  line-height: 28px;
+}
+.about-content {
+  font-size: 15px;
+  letter-spacing: 0.025em;
+  line-height: 28px;
+  margin-bottom: 29px;
+}
+.about .slide-button {
+  color: #a7009c;
+  border-color: #a7009c;
+}
+.about .slide-button:hover {
+  background: #a7009c;
+  color: #fff;
+}
+.white-bg .swiper-button-prev {
+  background: url(../images/up.svg) center center no-repeat;
+  bottom: -52px;
+  top: auto;
+}
+.white-bg .swiper-button-prev:after {
+  content: "";
 }
 
 @media only screen and (max-width: 1700px) {
