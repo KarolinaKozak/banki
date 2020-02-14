@@ -224,6 +224,7 @@ ul {
 .white-bg {
   background: #fff;
   padding: 2rem 20px 80px;
+  border: 1px solid #dfdfdf;
 }
 .gallery .h6 {
   font-weight: 700;
@@ -372,6 +373,7 @@ ul {
   padding-top: 70px;
   padding-bottom: 80px;
 }
+.shopping .h2,
 .about .h2 {
   color: #000;
 }
@@ -390,10 +392,15 @@ ul {
   line-height: 28px;
   margin-bottom: 29px;
 }
+.pad-top .slide-button,
 .about .slide-button {
   color: #a7009c;
   border-color: #a7009c;
 }
+.pad-top div.text-center {
+  margin-bottom: 2rem;
+}
+.pad-top .slide-button:hover,
 .about .slide-button:hover {
   background: #a7009c;
   color: #fff;
@@ -452,7 +459,154 @@ ul {
   -webkit-align-items: center;
   align-items: center;
 }
-
+.shopping {
+  padding-top: 74px;
+}
+.shopping .nav-tabs .nav-item {
+  width: 33.3333%;
+  text-align: center;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.shopping .nav-tabs .nav-item .nav-link {
+  color: #6e757c;
+  background: #f2f2f2;
+  margin-right: 3px;
+  border-radius: 6px 6px 0 0;
+}
+.shopping .nav-tabs .nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+.shopping .nav-tabs .nav-item .nav-link.active {
+  color: #e1e1e1;
+  background: rgba(129, 40, 125, 1);
+  background: -moz-linear-gradient(
+    left,
+    rgba(129, 40, 125, 1) 0%,
+    rgba(94, 29, 91, 1) 100%
+  );
+  background: -webkit-gradient(
+    left top,
+    right top,
+    color-stop(0%, rgba(129, 40, 125, 1)),
+    color-stop(100%, rgba(94, 29, 91, 1))
+  );
+  background: -webkit-linear-gradient(
+    left,
+    rgba(129, 40, 125, 1) 0%,
+    rgba(94, 29, 91, 1) 100%
+  );
+  background: -o-linear-gradient(
+    left,
+    rgba(129, 40, 125, 1) 0%,
+    rgba(94, 29, 91, 1) 100%
+  );
+  background: -ms-linear-gradient(
+    left,
+    rgba(129, 40, 125, 1) 0%,
+    rgba(94, 29, 91, 1) 100%
+  );
+  background: linear-gradient(
+    to right,
+    rgba(129, 40, 125, 1) 0%,
+    rgba(94, 29, 91, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81287d', endColorstr='#5e1d5b', GradientType=1 );
+}
+.product-item {
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.product-item::after {
+  content: "";
+  background: #8b9196;
+  height: 1px;
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  left: 0;
+}
+.product-item-img-container {
+  position: relative;
+  padding-bottom: 80%;
+  border-radius: 8px;
+  display: block;
+}
+.product-item-img-container::after {
+  content: attr(title);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 44px;
+  font-weight: 300;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  color: #fff;
+  background: rgba(64, 0, 59, 0.81) url("../images/lupa.png") 50% 30% no-repeat;
+  border-radius: 8px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+a:hover .product-item-img-container::after {
+  transform: scale(1);
+  opacity: 1;
+}
+.product-item-img-container img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  display: block;
+}
+.product-item-title {
+  color: #2c2c2c;
+  font-weight: 300;
+  padding-top: 14px;
+  display: block;
+  line-height: 19px;
+}
+.price {
+  font-size: 18px;
+  color: #7e3781;
+  letter-spacing: -0.01em;
+  line-height: 14px;
+}
+.old-price {
+  color: #2c2c2c;
+  font-size: 11px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+}
+.product-basket {
+  background: transparent;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.2s ease;
+}
+.product-basket:hover {
+  opacity: 0.8;
+}
+.pb {
+  padding-bottom: 1.5rem;
+}
+.pb .row {
+  margin-top: 0.5rem;
+}
+.pad-top {
+  padding-top: 44px;
+  border: 3px solid #f1f1f1;
+  margin: 0;
+}
 @media only screen and (max-width: 1700px) {
 }
 @media only screen and (max-width: 1480px) {
